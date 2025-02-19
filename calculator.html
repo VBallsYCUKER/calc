@@ -30,6 +30,8 @@
             width: 100%;
             max-width: 400px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
@@ -86,7 +88,8 @@
         .footer {
             font-size: 12px;
             color: #888;
-            margin-top: 30px;
+            padding-top: 20px; /* Adjust spacing without margin */
+            word-wrap: break-word;
         }
 
         .color-picker-container {
@@ -114,8 +117,9 @@
 
         <div class="result" id="result"></div>
 
+        <!-- Footer moved inside the container -->
         <div class="footer">
-            <p>Calcs. using formulas in "https://raw.githubusercontent.com/VBallsYCUKER/calc/refs/heads/main/formulas.txt"</p>
+            <p>Calcs. using formulas in <a href="https://raw.githubusercontent.com/VBallsYCUKER/calc/refs/heads/main/formulas.txt" target="_blank">this file</a></p>
         </div>
     </div>
 
